@@ -4,10 +4,10 @@
 
 @layer components {
   .sl-container {
-    @apply 2xl:max-w-[1560px] xl:max-w-[1230px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] w-full px-4 mx-auto;
+    @apply xl:max-w-[1425px] lg:max-w-[960px] md:max-w-[726px] w-full xl:px-[90px] md:px-0 xs:px-8 px-4 mx-auto;
   }
   .sl-animation {
-    @apply transition-all duration-300 ease-out;
+    @apply transition-all duration-300 ease-linear;
   }
   .sl-animation-fade {
     @apply transition-opacity duration-150 ease-linear;
@@ -16,7 +16,7 @@
 
 @layer base {
   body {
-    @apply bg-white text-ash-100;
+    @apply md:text-sm text-xs text-neutral-800;
   }
 
   section {
@@ -68,4 +68,7 @@
 }
 
 @layer utilities {
+  .test {
+    color: rgba(0,0,0,0.3);
+  }
 }
