@@ -1,6 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
-import { EffectFade, Autoplay } from 'swiper/modules';
+import 'swiper/css/navigation';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import hero1Img from "../assets/banner/Marble-banner-bg-1.jpg";
 import hero2Img from "../assets/banner/Marble-banner-bg-2.jpg";
 import hero3Img from "../assets/banner/Marble-banner-bg-3.jpg";
@@ -16,29 +19,42 @@ import slide4Img from "../assets/slider/Marble_SlideBanner_2018_04.jpg";
 import banner1Img from "../assets/marble-awards-bg.jpg";
 
 export default function Home() {
+     // const swiper = useSwiper();
 
      return (
           <main>
                <Swiper
                     loop={true}
-                    effect={'fade'}
                     autoplay={{
                          delay: 2500,
                          disableOnInteraction: false,
                     }}
-                    modules={[EffectFade, Autoplay]}
-                    className="mySwiper"
-               >
+                    navigation={{
+                         nextEl: '.swiper-button-next',
+                         prevEl: '.swiper-button-prev',
+                    }}
+                    modules={[Autoplay, Navigation]}
+                    className="mySwiper">
                     <SwiperSlide><div className="h-dvh bg-center bg-cover bg-no-repeat" style={{ backgroundImage: `url(${hero1Img})` }}></div></SwiperSlide>
                     <SwiperSlide><div className="h-dvh bg-center bg-cover bg-no-repeat" style={{ backgroundImage: `url(${hero2Img})` }}></div></SwiperSlide>
                     <SwiperSlide><div className="h-dvh bg-center bg-cover bg-no-repeat" style={{ backgroundImage: `url(${hero3Img})` }}></div></SwiperSlide>
                     <SwiperSlide><div className="h-dvh bg-center bg-cover bg-no-repeat" style={{ backgroundImage: `url(${hero4Img})` }}></div></SwiperSlide>
+                    <button className="swiper-button-prev absolute md:!w-12 !w-9 md:!h-12 !h-9 text-sm border border-white rounded-full !text-white opacity-70 hover:opacity-80 after:hidden">
+                         <FontAwesomeIcon icon={faChevronLeft} />
+                    </button>
+                    <button className="swiper-button-next absolute md:!w-12 !w-9 md:!h-12 !h-9 text-sm border border-white rounded-full !text-white opacity-70 hover:opacity-80 after:hidden">
+                         <FontAwesomeIcon icon={faChevronRight} />
+                    </button>
+                    <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-50 text-white text-center">
+                         <h1 className="md:text-8xl xs:text-6xl text-4xl font-bold tracking-widest uppercase md:mb-4 xs:mb-2">Epicure</h1>
+                         <p className='md:text-xl xs:text-base text-sm'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
                </Swiper>
 
                <section className="py-12">
                     <div className="sl-container">
                          <header className="text-center uppercase">
-                              <h1 className="text-2xl font-light">I’ve long been fascinated by what makes South African fare unique.</h1>
+                              <h2 className="text-2xl font-light">I’ve long been fascinated by what makes South African fare unique.</h2>
                               <span className="block text-[11px] tracking-[2px] text-neutral-700 mt-2.5 mb-3.5 font-bold">Partner & Chef David Higgs</span>
                          </header>
                          <div className="relative flex flex-wrap mt-14 mb-20">
@@ -76,18 +92,26 @@ export default function Home() {
 
                <Swiper
                     loop={true}
-                    effect={'fade'}
                     autoplay={{
                          delay: 2500,
                          disableOnInteraction: false,
                     }}
-                    modules={[EffectFade, Autoplay]}
-                    className="mySwiper"
-               >
-                    <SwiperSlide><div className="h-[600px] bg-center bg-cover bg-no-repeat" style={{ backgroundImage: `url(${slide1Img})` }}></div></SwiperSlide>
-                    <SwiperSlide><div className="h-[600px] bg-center bg-cover bg-no-repeat" style={{ backgroundImage: `url(${slide2Img})` }}></div></SwiperSlide>
-                    <SwiperSlide><div className="h-[600px] bg-center bg-cover bg-no-repeat" style={{ backgroundImage: `url(${slide3Img})` }}></div></SwiperSlide>
-                    <SwiperSlide><div className="h-[600px] bg-center bg-cover bg-no-repeat" style={{ backgroundImage: `url(${slide4Img})` }}></div></SwiperSlide>
+                    navigation={{
+                         nextEl: '.swiper-button-next',
+                         prevEl: '.swiper-button-prev',
+                    }}
+                    modules={[Autoplay, Navigation]}
+                    className="mySwiper">
+                    <SwiperSlide><div className="md:h-[600px] h-[300px] bg-center bg-cover bg-no-repeat" style={{ backgroundImage: `url(${slide1Img})` }}></div></SwiperSlide>
+                    <SwiperSlide><div className="md:h-[600px] h-[300px] bg-center bg-cover bg-no-repeat" style={{ backgroundImage: `url(${slide2Img})` }}></div></SwiperSlide>
+                    <SwiperSlide><div className="md:h-[600px] h-[300px] bg-center bg-cover bg-no-repeat" style={{ backgroundImage: `url(${slide3Img})` }}></div></SwiperSlide>
+                    <SwiperSlide><div className="md:h-[600px] h-[300px] bg-center bg-cover bg-no-repeat" style={{ backgroundImage: `url(${slide4Img})` }}></div></SwiperSlide>
+                    <button className="swiper-button-prev absolute md:!w-12 !w-9 md:!h-12 !h-9 text-sm border border-white rounded-full !text-white opacity-70 hover:opacity-80 after:hidden">
+                         <FontAwesomeIcon icon={faChevronLeft} />
+                    </button>
+                    <button className="swiper-button-next absolute md:!w-12 !w-9 md:!h-12 !h-9 text-sm border border-white rounded-full !text-white opacity-70 hover:opacity-80 after:hidden">
+                         <FontAwesomeIcon icon={faChevronRight} />
+                    </button>
                </Swiper>
 
                <section className="py-12">
@@ -193,7 +217,7 @@ export default function Home() {
                                    Feature 2020
                               </h3>
                          </header>
-                         <iframe className="w-full lg:h-[600px] md:h-[400px] xs:h-[300] h-[240px]" src="https://www.youtube.com/embed/UmWH4zePd4k?si=Xexhoj6kIvwHPx9A&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                         <iframe className="w-full lg:h-[600px] md:h-[400px] xs:h-[300] h-[240px]" src="https://www.youtube.com/embed/UmWH4zePd4k?si=Xexhoj6kIvwHPx9A&amp;controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
                </section>
           </main>

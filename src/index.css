@@ -12,6 +12,9 @@
   .sl-animation-fade {
     @apply transition-opacity duration-150 ease-linear;
   }
+  .swiper-button-prev svg, .swiper-button-next svg{
+    @apply !h-[1em] !w-auto
+  }
 }
 
 @layer base {
@@ -68,7 +71,10 @@
 }
 
 @layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
   .test {
-    color: rgba(0,0,0,0.3);
+    color: rgba(0, 0, 0, 0.3);
   }
 }
