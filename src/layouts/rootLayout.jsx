@@ -57,7 +57,7 @@ export default function RootLayout() {
                               </ul>
                          </div>
                     </div>
-                    <div className={`h-20 bg-white/95 shadow-md ${offset > 500 ? "md:h-16 text-neutral-800" : "md:h-24 md:bg-gradient-to-b from-[rgba(0,0,0,0.6)] via-[rgba(0,0,0,0.4)] to-black/0 md:bg-transparent"}`}>
+                    <div className={`h-20 bg-white/95 ${offset > 500 ? "md:h-16 text-neutral-800 shadow-md" : "md:h-24 md:bg-gradient-to-b from-[rgba(0,0,0,0.6)] via-[rgba(0,0,0,0.4)] to-black/0 md:bg-transparent"}`}>
                          <div className="sl-container flex flex-wrap justify-between h-full">
                               <a href="" className="flex items-center justify-center">
                                    <svg className={`block fill-yellow-700 w-28 h-8 ${offset > 500 ? "md:block" : "md:hidden"}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 164">

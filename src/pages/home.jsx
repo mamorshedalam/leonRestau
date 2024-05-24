@@ -58,7 +58,7 @@ export default function Home() {
                               <span className="block text-[11px] tracking-[2px] text-neutral-700 mt-2.5 mb-3.5 font-bold">Partner & Chef David Higgs</span>
                          </header>
                          <div className="relative flex flex-wrap mt-14 mb-20">
-                              <div className="lg:w-3/5 w-full">
+                              <div className="lg:w-[65%] w-full">
                                    <a href=""><img src={section1Img} alt="" /></a>
                               </div>
                               <div className="lg:absolute right-0 top-10 lg:w-1/2 w-full md:p-10 p-5 bg-white">
@@ -73,7 +73,7 @@ export default function Home() {
                               </div>
                          </div>
                          <div className="relative flex flex-wrap mt-14 mb-20">
-                              <div className="lg:w-3/5 w-full ml-auto">
+                              <div className="lg:w-[65%] w-full ml-auto">
                                    <a href=""><img src={section2Img} alt="" /></a>
                               </div>
                               <div className="lg:absolute left-0 top-10 lg:w-1/2 w-full md:p-10 p-5 bg-white">
@@ -117,7 +117,7 @@ export default function Home() {
                <section className="py-12">
                     <div className="sl-container">
                          <div className="relative flex flex-wrap mt-14 mb-20">
-                              <div className="lg:w-3/5 w-full">
+                              <div className="lg:w-[65%] w-full">
                                    <a href=""><img src={section3Img} alt="" /></a>
                               </div>
                               <div className="lg:absolute right-0 top-10 lg:w-1/2 w-full md:p-10 p-5 bg-white">
@@ -130,7 +130,7 @@ export default function Home() {
                               </div>
                          </div>
                          <div className="relative flex flex-wrap mt-14 mb-20">
-                              <div className="lg:w-3/5 w-full ml-auto">
+                              <div className="lg:w-[65%] w-full ml-auto">
                                    <a href=""><img src={section4Img} alt="" /></a>
                               </div>
                               <div className="lg:absolute left-0 top-10 lg:w-1/2 w-full md:p-10 p-5 bg-white">
