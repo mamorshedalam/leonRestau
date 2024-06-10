@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ['Lato', 'ui-sans-serif', 'system-ui'],
+      sans: ['Roboto', 'ui-sans-serif', 'system-ui'],
       serif: ['ui-serif', 'Georgia'],
       mono: ['ui-monospace', 'SFMono-Regular'],
-      georgia: ['Georgia', 'ui-sans-serif', 'system-ui'],
+      courgette: ['Courgette', 'ui-sans-serif', 'system-ui'],
     },
     screens: {
       xs: "420px",
@@ -18,6 +18,7 @@ module.exports = {
       md: "768px",
       lg: "960px",
       xl: "1100px",
+      xxl: "1260px",
       "2xl": "1536px",
     },
   },

@@ -10,7 +10,7 @@ export default function About() {
 
      return (
           <main>
-               <section className="flex justify-center items-end md:pb-10 xs:pb-5 pb-3 md:max-h-[720px] xs:max-h-[360px] max-h-[280px] h-[70dvh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${heroImg})` }}>
+               <section className="flex justify-center items-center md:pb-10 xs:pb-5 pb-3 md:max-h-[720px] xs:max-h-[360px] max-h-[280px] h-[70dvh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${heroImg})` }}>
                     <h2 className="text-white tracking-widest font-medium lg:text-6xl md:text-5xl text-3xl uppercase">Our Story</h2>
                </section>
 
@@ -20,9 +20,9 @@ export default function About() {
                               <div className="lg:w-[65%] w-full ml-auto">
                                    <a href=""><img src={section3Img} alt="" /></a>
                               </div>
-                              <div className="lg:absolute left-0 top-10 lg:w-1/2 w-full md:p-10 p-5 bg-white">
-                                   <h3 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
-                                        <span className="block lowercase text-yellow-700 font-georgia italic lg:text-7xl md:text-5xl text-4xl leading-[50px]">Marble</span>
+                              <div className="lg:absolute left-0 xxl:top-10 top-0 xxl:w-1/2 lg:w-2/3 w-full md:p-10 p-5 bg-white border border-neutral-800/25 rounded-lg shadow-lg">
+                                   <h3 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
+                                        <span className="block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]">Marble</span>
                                         Restaurant
                                    </h3>
                                    <p className='leading-relaxed mt-2'>“Marble is a celebration of quintessential South African fare. It embodies South Africans’ love of cooking with fire, a quality that makes our food culture different from the rest of the world” David Higgs.</p>
@@ -39,8 +39,8 @@ export default function About() {
                <section className="py-12">
                     <div className="sl-container">
                          <header className="text-center">
-                              <h2 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
-                                   <span className="block lowercase text-yellow-700 font-georgia italic lg:text-7xl md:text-5xl text-4xl leading-[50px]">Artisans</span>
+                              <h2 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
+                                   <span className="block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]">Artisans</span>
                                    That Worked On Marble
                               </h2>
                               <p className="text-neutral-700 my-5">Marble Restaurant chose to collaborate with local artisans for all the interior design at Marble. Since we are located in the Keyes Art Mile, it made perfect sense to incorporate art in the interior installations. At Marble, art is expressed in every design element.</p>
@@ -50,9 +50,9 @@ export default function About() {
                               <div className="lg:w-[65%] w-full">
                                    <a href=""><img src={section1Img} alt="" /></a>
                               </div>
-                              <div className="lg:absolute right-0 top-10 lg:w-1/2 w-full md:p-10 p-5 bg-white">
-                                   <h3 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
-                                        <span className="block lowercase text-yellow-700 font-georgia italic lg:text-7xl md:text-5xl text-4xl leading-[50px]">Damien</span>
+                              <div className="lg:absolute right-0 xxl:top-10 top-0 xxl:w-1/2 lg:w-2/3 w-full md:p-10 p-5 bg-white border border-neutral-800/25 rounded-lg shadow-lg">
+                                   <h3 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
+                                        <span className="block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]">Damien</span>
                                         Grivas
                                    </h3>
                                    <p className='leading-relaxed mt-2'>Damien Grivas, from Johannesburg, who made up the custom wall panels behind our main bar. He also designed and manufactured the cement wall façade at the open kitchen and the hand woven macrame screen inside the main restaurant.</p>
@@ -62,9 +62,9 @@ export default function About() {
                               <div className="lg:w-[65%] w-full ml-auto">
                                    <a href=""><img src={section2Img} alt="" /></a>
                               </div>
-                              <div className="lg:absolute left-0 top-10 lg:w-1/2 w-full md:p-10 p-5 bg-white">
-                                   <h3 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
-                                        <span className="block lowercase text-yellow-700 font-georgia italic lg:text-7xl md:text-5xl text-4xl leading-[50px]">Peter</span>
+                              <div className="lg:absolute left-0 xxl:top-10 top-0 xxl:w-1/2 lg:w-2/3 w-full md:p-10 p-5 bg-white border border-neutral-800/25 rounded-lg shadow-lg">
+                                   <h3 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
+                                        <span className="block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]">Peter</span>
                                         Mthombeni
                                    </h3>
                                    <p className='leading-relaxed mt-2'>Peter Mthombeni is a ceramic artist based in Johannesburg. He designed and maked up the Dolos figurines in ceramic and installed hundreds of these into a wall feature in the restaurant.</p>
@@ -74,9 +74,9 @@ export default function About() {
                               <div className="lg:w-[65%] w-full">
                                    <a href=""><img src={section4Img} alt="" /></a>
                               </div>
-                              <div className="lg:absolute right-0 top-10 lg:w-1/2 w-full md:p-10 p-5 bg-white">
-                                   <h3 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
-                                        <span className="block lowercase text-yellow-700 font-georgia italic lg:text-7xl md:text-5xl text-4xl leading-[50px]">Krisjan</span>
+                              <div className="lg:absolute right-0 xxl:top-10 top-0 xxl:w-1/2 lg:w-2/3 w-full md:p-10 p-5 bg-white border border-neutral-800/25 rounded-lg shadow-lg">
+                                   <h3 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
+                                        <span className="block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]">Krisjan</span>
                                         Rossouw
                                    </h3>
                                    <p className='leading-relaxed mt-2'>Krisjan Rossouw is an art photographer from Cape Town, and we have collaborated with him to showcase 3 of his images, shot exclusively for Marble. These will share our mantra through the art of photography.</p>
@@ -86,9 +86,9 @@ export default function About() {
                               <div className="lg:w-[65%] w-full ml-auto">
                                    <a href=""><img src={section5Img} alt="" /></a>
                               </div>
-                              <div className="lg:absolute left-0 top-10 lg:w-1/2 w-full md:p-10 p-5 bg-white">
-                                   <h3 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
-                                        <span className="block lowercase text-yellow-700 font-georgia italic lg:text-7xl md:text-5xl text-4xl leading-[50px]">Mervyn</span>
+                              <div className="lg:absolute left-0 xxl:top-10 top-0 xxl:w-1/2 lg:w-2/3 w-full md:p-10 p-5 bg-white border border-neutral-800/25 rounded-lg shadow-lg">
+                                   <h3 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
+                                        <span className="block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]">Mervyn</span>
                                         Gers
                                    </h3>
                                    <p className='leading-relaxed mt-2'>Mervyn Gers is a ceramic artist based in Cape Town, and specialises in handmade ceramic tableware. He has manufactured our tableware for service and has also maked up our hand painted ceramic wall tiles that are installed in our open kitchen.</p>

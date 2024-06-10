@@ -4,8 +4,8 @@ export default function Menu() {
 
      return (
           <main>
-               <section className="flex justify-center items-end md:pb-10 xs:pb-5 pb-3 md:max-h-[720px] xs:max-h-[360px] max-h-[280px] h-[70dvh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${heroImg})` }}>
-                    <h2 className="text-white tracking-widest font-medium lg:text-6xl md:text-5xl text-3xl uppercase">Menu</h2>
+               <section className="flex justify-center items-center md:pb-10 xs:pb-5 pb-3 md:max-h-[720px] xs:max-h-[360px] max-h-[280px] h-[70dvh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${heroImg})` }}>
+                    <h2 className="text-white tracking-widest font-medium lg:text-7xl md:text-6xl text-4xl uppercase">Menu</h2>
                </section>
                <section className="mt-8 lg:py-8 py-5">
                     <div className="sl-container">
@@ -15,7 +15,7 @@ export default function Menu() {
                </section>
                <section className="lg:py-8 py-5">
                     <div className="sl-container">
-                         <h2 className="text-center lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl">To Start</h2>
+                         <h2 className="text-center lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl">To <span className="lowercase text-yellow-700 font-courgette lg:text-5xl md:text-3xl text-2xl">Start</span></h2>
                          <div className="flex flex-wrap justify-center lg:mt-20 md:mt-12 mt-8 border-b border-neutral-800">
                               <div className="lg:w-1/3 md:w-1/2 w-full md:min-h-36 min-h-24 md:mb-9 mb-3 md:pr-[4%]">
                                    <h4 className="flex items-end font-semibold uppercase">
@@ -70,7 +70,7 @@ export default function Menu() {
                </section>
                <section className="lg:py-8 py-5">
                     <div className="sl-container">
-                         <h2 className="text-center lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl">As An Extra</h2>
+                         <h2 className="text-center lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl">As An <span className="lowercase text-yellow-700 font-courgette lg:text-5xl md:text-3xl text-2xl">Extra</span></h2>
                          <div className="flex flex-wrap justify-center lg:mt-20 md:mt-12 mt-8 border-b border-neutral-800">
                               <div className="md:w-1/2 w-full md:min-h-20 min-h-16 md:mb-9 mb-3 md:pr-[4%]">
                                    <h4 className="flex items-end font-semibold uppercase">
@@ -93,7 +93,7 @@ export default function Menu() {
                </section>
                <section className="lg:py-8 py-5">
                     <div className="sl-container">
-                         <h2 className="text-center lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl">The Works</h2>
+                         <h2 className="text-center lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl">The <span className="lowercase text-yellow-700 font-courgette lg:text-5xl md:text-3xl text-2xl">Works</span></h2>
                          <div className="flex flex-wrap justify-center lg:mt-20 md:mt-12 mt-8 border-b border-neutral-800">
                               <div className="lg:w-1/3 md:w-1/2 w-full md:min-h-36 min-h-24 md:mb-9 mb-3 md:pr-[4%]">
                                    <h4 className="flex items-end font-semibold uppercase">
@@ -149,16 +149,10 @@ export default function Menu() {
                <section className="lg:py-8 py-5">
                     <div className="sl-container">
                          <header className="text-center space-y-4">
-                              <h2 className="lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl">Our Signature Meat Cuts</h2>
-                              <p className="text-neutral-700">When it comes to meat, we’re obsessed with every detail. It’s what makes us Enthusiasts. From the spacious plains of the coastal Tsitsikamma region to the acres of golden Okanagan fields, we’ve visited every producer, specially selecting every cut on our menu. Renowned for maturity, taste, marbling and distinction, this is some of the world’s most sought after beef.</p>
+                              <h2 className="lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl">Our <span className="lowercase text-yellow-700 font-courgette lg:text-5xl md:text-3xl text-2xl">Signature</span> Meat Cuts</h2>
                          </header>
-                         <iframe className="md:h-96 sm:h-72 h-60 md:max-w-[560px] max-w-[480px] w-full mx-auto mt-20" src="https://www.youtube.com/embed/L2RUWnVO4BE?si=Ia6R4PXAzcXydKOn&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                    </div>
-               </section>
-               <section className="lg:py-8 py-5">
-                    <div className="sl-container">
+                         <iframe className="md:h-96 sm:h-72 h-60 md:max-w-[560px] max-w-[480px] w-full mx-auto my-10" src="https://www.youtube.com/embed/L2RUWnVO4BE?si=Ia6R4PXAzcXydKOn&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                          <header className="text-center space-y-4">
-                              <h2 className="lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl">Our Signature Meat Cuts</h2>
                               <p className="text-neutral-700">When it comes to meat, we’re obsessed with every detail. It’s what makes us Enthusiasts. From the spacious plains of the coastal Tsitsikamma region to the acres of golden Okanagan fields, we’ve visited every producer, specially selecting every cut on our menu. Renowned for maturity, taste, marbling and distinction, this is some of the world’s most sought after beef.</p>
                          </header>
                          <div className="flex flex-wrap justify-center lg:mt-20 md:mt-12 mt-8">
@@ -183,7 +177,7 @@ export default function Menu() {
                </section>
                <section className="lg:py-8 py-5">
                     <div className="sl-container">
-                         <h2 className="text-center lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl">A Tasting of our Sirloin Selection</h2>
+                         <h2 className="text-center lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl">A Tasting of our <span className="lowercase text-yellow-700 font-courgette lg:text-5xl md:text-3xl text-2xl">Sirloin</span> Selection</h2>
                          <div className="flex flex-wrap justify-center md:mt-12 mt-8">
                               <div className="md:w-1/2 w-full md:min-h-16 min-h-12 md:pr-[4%]">
                                    <h4 className="flex flex-col items-center gap-y-4 font-semibold uppercase">
@@ -198,7 +192,7 @@ export default function Menu() {
                <section className="lg:py-8 py-5">
                     <div className="sl-container">
                          <header className="text-center space-y-4">
-                              <h2 className="lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl">Silent Valley Wagyu, Ingogo, South Africa</h2>
+                              <h2 className="lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl"><span className="lowercase text-yellow-700 font-courgette lg:text-5xl md:text-3xl text-2xl">Silent Valley</span> Wagyu, Ingogo, South Africa</h2>
                               <p className="text-neutral-700">With farms established in 1919, Silent Valley Wagyu now proudly produces some of World’s most exquisite beef. The very best of our Signature Range, export grade Wagyu makes its way to Marble.</p>
                          </header>
                          <div className="flex flex-wrap justify-center lg:mt-20 md:mt-12 mt-8">
@@ -224,7 +218,7 @@ export default function Menu() {
                <section className="lg:py-8 py-5">
                     <div className="sl-container">
                          <header className="text-center space-y-4">
-                              <h2 className="lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl">Chalmar Beef, South Africa</h2>
+                              <h2 className="lg:font-light uppercase mb-2.5 tracking-widest lg:text-3xl text-2xl"><span className="lowercase text-yellow-700 font-courgette lg:text-5xl md:text-3xl text-2xl">Chalmar Beef</span>, South Africa</h2>
                               <p className="text-neutral-700">At Chalmar, the perfect balance of science and heart translate to tender, juicy beef of extraordinary quality in every cut.</p>
                          </header>
                          <div className="flex flex-wrap justify-center lg:mt-20 md:mt-12 mt-8">

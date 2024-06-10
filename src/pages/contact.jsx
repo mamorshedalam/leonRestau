@@ -5,7 +5,7 @@ export default function Contact() {
 
      return (
           <main>
-               <section className="flex justify-center items-end md:pb-10 xs:pb-5 pb-3 md:max-h-[720px] xs:max-h-[360px] max-h-[280px] h-[70dvh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${heroImg})` }}>
+               <section className="flex justify-center items-center md:pb-10 xs:pb-5 pb-3 md:max-h-[720px] xs:max-h-[360px] max-h-[280px] h-[70dvh] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${heroImg})` }}>
                     <h2 className="text-white tracking-widest font-medium lg:text-6xl md:text-5xl text-3xl uppercase">Contact Us</h2>
                </section>
 
@@ -16,18 +16,18 @@ export default function Contact() {
                          <form className="my-4">
                               <div className="mt-4">
                                    <label htmlFor="name" className="relative font-bold uppercase after:absolute after:top-0 after:-right-2 after:content-['*'] after:text-red-700">Name & Surname:</label>
-                                   <input id="name" type="text" className="mt-3 p-1 w-full bg-white text-neutral-700 border border-neutral-200 focus:border-neutral-700" />
+                                   <input id="name" type="text" className="mt-3 p-1 w-full bg-white text-neutral-700 border border-neutral-200 focus:border-neutral-700 rounded-sm" />
                               </div>
                               <div className="mt-4">
                                    <label htmlFor="email" className="relative font-bold uppercase after:absolute after:top-0 after:-right-2 after:content-['*'] after:text-red-700">Email:</label>
-                                   <input id="email" type="email" className="mt-3 p-1 w-full bg-white text-neutral-700 border border-neutral-200 focus:border-neutral-700" />
+                                   <input id="email" type="email" className="mt-3 p-1 w-full bg-white text-neutral-700 border border-neutral-200 focus:border-neutral-700 rounded-sm" />
                               </div>
                               <div className="mt-4">
                                    <label htmlFor="message" className="relative font-bold uppercase after:absolute after:top-0 after:-right-2 after:content-['*'] after:text-red-700">Message:</label>
-                                   <textarea id="message" rows={10} className="mt-3 p-1 w-full bg-white text-neutral-700 border border-neutral-200 focus:border-neutral-700" ></textarea>
+                                   <textarea id="message" rows={10} className="mt-3 p-1 w-full bg-white text-neutral-700 border border-neutral-200 focus:border-neutral-700 rounded-sm" ></textarea>
                               </div>
                               <div className="mt-4">
-                                   <button className="text-base text-white bg-neutral-800 uppercase font-bold tracking-widest py-2.5 px-5">submit</button>
+                                   <button className="text-base text-white bg-neutral-800 uppercase font-bold tracking-widest py-2.5 px-5 rounded-sm">submit</button>
                               </div>
                          </form>
                     </section>
