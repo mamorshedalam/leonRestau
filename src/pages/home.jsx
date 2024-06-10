@@ -17,9 +17,9 @@ import slide2Img from "../assets/slider/Marble_SlideBanner_2018_02.jpg";
 import slide3Img from "../assets/slider/Marble_SlideBanner_2018_03.jpg";
 import slide4Img from "../assets/slider/Marble_SlideBanner_2018_04.jpg";
 import banner1Img from "../assets/marble-awards-bg.jpg";
+import ImgSection from '../components/ImgSection/ImgSection';
 
 export default function Home() {
-     // const swiper = useSwiper();
 
      return (
           <main>
@@ -55,38 +55,22 @@ export default function Home() {
                     <div className="sl-container">
                          <header className="text-center uppercase">
                               <h2 className="text-2xl font-light">I’ve long been fascinated by what makes South African fare unique.</h2>
-                              <span className="block text-[11px] tracking-[2px] text-neutral-700 mt-2.5 mb-3.5 font-bold">Partner & Chef David Higgs</span>
+                              <span className="block text-[11px] tracking-[2px] text-fuchsia-500 mt-2.5 mb-3.5 font-bold">Partner & Chef David Higgs</span>
                          </header>
-                         <div className="relative flex flex-wrap mt-14 mb-20">
-                              <div className="lg:w-[65%] w-full">
-                                   <a href=""><img src={section1Img} alt="" /></a>
-                              </div>
-                              <div className="lg:absolute right-0 xxl:top-10 top-0 xxl:w-1/2 lg:w-2/3 w-full md:p-10 p-5 bg-white border border-neutral-800/25 rounded-lg shadow-lg">
-                                   <h3 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
-                                        <span className="block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]">Discover</span>
-                                        OurStory
-                                   </h3>
-                                   <span className="block text-neutral-700 mt-2.5 mb-5 text-xs uppercase tracking-[2px]">Ultimate dining experience like no other</span>
-                                   <p className='leading-loose'>Marble is a celebration of quintessential South African fare and cooking on fire Marble embodies South Africans’ love of cooking with fire, a quality that makes our food culture different from the rest of the world” David Higgs.</p>
-                                   <p className='leading-loose'>Situated in Keyes Art Mile, the growing art and food hub of Rosebank, Marble Restaurant will boast a grand wood-fired grill imported from Grill Works situated in Michigan as the focal point of the restaurant. The concept combines the open-fire trend seen internationally with an added dose of good South African flair.</p>
-                                   <a href="" className="text-[11px] font-semibold tracking-widest text-white bg-neutral-800 py-2 px-7 uppercase mt-6 rounded">Read More</a>
-                              </div>
-                         </div>
-                         <div className="relative flex flex-wrap mt-14 mb-20">
-                              <div className="lg:w-[65%] w-full ml-auto">
-                                   <a href=""><img src={section2Img} alt="" /></a>
-                              </div>
-                              <div className="lg:absolute left-0 xxl:top-10 top-0 xxl:w-1/2 lg:w-2/3 w-full md:p-10 p-5 bg-white border border-neutral-800/25 rounded-lg shadow-lg">
-                                   <h3 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
-                                        <span className="block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]">Mile8</span>
-                                        by David Higgs
-                                   </h3>
-                                   <span className="block text-neutral-700 mt-2.5 mb-5 text-xs uppercase tracking-[2px]">A book about cooking</span>
-                                   <p className='leading-loose'>With over 90 dishes and 150 recipes influenced by the journey of Higgs’ career, Mile 8 is a culinary adventure bringing together the unique and interesting flavours of Southern Africa.</p>
-                                   <p className='leading-loose'>Add a copy to your collection or order as the perfect gift for a taste adventure enthusiast.</p>
-                                   <a href="" className="text-[11px] font-semibold tracking-widest text-white bg-neutral-800 py-2 px-7 uppercase mt-6 rounded">Read More</a>
-                              </div>
-                         </div>
+                         <ImgSection img={section1Img}
+                              link="/"
+                              classes="md:mt-20 mb-9"
+                              high="Discover" title="OurStory"
+                              sub="Ultimate dining experience like no other"
+                              paras={["Marble is a celebration of quintessential South African fare and cooking on fire Marble embodies South Africans’ love of cooking with fire, a quality that makes our food culture different from the rest of the world” David Higgs.",
+                                   "Situated in Keyes Art Mile, the growing art and food hub of Rosebank, Marble Restaurant will boast a grand wood-fired grill imported from Grill Works situated in Michigan as the focal point of the restaurant. The concept combines the open-fire trend seen internationally with an added dose of good South African flair."]} />
+                         <ImgSection img={section2Img}
+                              link="/"
+                              classes="lg:mt-20 sm:mt-12 mb-9"
+                              high="Mile8" title="by David Higgs"
+                              sub="A book about cooking"
+                              paras={["With over 90 dishes and 150 recipes influenced by the journey of Higgs’ career, Mile 8 is a culinary adventure bringing together the unique and interesting flavours of Southern Africa.",
+                                   "Add a copy to your collection or order as the perfect gift for a taste adventure enthusiast."]} />
                     </div>
                </section>
 
@@ -116,33 +100,18 @@ export default function Home() {
 
                <section className="py-12">
                     <div className="sl-container">
-                         <div className="relative flex flex-wrap mt-14 mb-20">
-                              <div className="lg:w-[65%] w-full">
-                                   <a href=""><img src={section3Img} alt="" /></a>
-                              </div>
-                              <div className="lg:absolute right-0 xxl:top-10 top-0 xxl:w-1/2 lg:w-2/3 w-full md:p-10 p-5 bg-white border border-neutral-800/25 rounded-lg shadow-lg">
-                                   <h3 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
-                                        <span className="block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]">Dining</span>
-                                        Experience
-                                   </h3>
-                                   <span className="block text-neutral-700 mt-2.5 mb-5 text-xs uppercase tracking-[2px]">Ultimate Dining Experience like no other</span>
-                                   <p className='leading-loose'>Marble offers Joburg diners something different – not just a plate of food, but a theatre of experience. Marble celebrates the quintessential South African tradition of cooking on fire – and not just meat, but all types of ingredients cooked on coals – including fish, poultry, vegetables and breads. The wine list has been painstakingly put together – it features 100 of the best local and some international wines. Diners can expect a great night out, with delicious food and top-notch service – and one of the best views of the city.</p>
-                              </div>
-                         </div>
-                         <div className="relative flex flex-wrap mt-14 mb-20">
-                              <div className="lg:w-[65%] w-full ml-auto">
-                                   <a href=""><img src={section4Img} alt="" /></a>
-                              </div>
-                              <div className="lg:absolute left-0 xxl:top-10 top-0 xxl:w-1/2 lg:w-2/3 w-full md:p-10 p-5 bg-white border border-neutral-800/25 rounded-lg shadow-lg">
-                                   <h3 className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl uppercase md:font-light text-neutral-800 lg:leading-[1em]">
-                                        <span className="block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]">Marble</span>
-                                        Gift Cards
-                                   </h3>
-                                   <span className="block text-neutral-700 mt-2.5 mb-5 text-xs uppercase tracking-[2px]">A book about cooking</span>
-                                   <p className='leading-loose'>Easily purchase one of our set value gift cards and spoil a friend, a client or a loved one to an ultimate dining experience like no other. An experience that combines the concepts of an open-fire trend seen internationally with an added dose of good South African flair.</p>
-                                   <a href="" className="text-[11px] font-semibold tracking-widest text-white bg-neutral-800 py-2 px-7 uppercase mt-6 rounded">Read More</a>
-                              </div>
-                         </div>
+                         <ImgSection img={section3Img}
+                              link="/"
+                              classes="lg:mt-20 sm:mt-12 mb-9"
+                              high="Dining" title="Experience"
+                              sub="Ultimate Dining Experience like no other"
+                              paras={["Marble offers Joburg diners something different – not just a plate of food, but a theatre of experience. Marble celebrates the quintessential South African tradition of cooking on fire – and not just meat, but all types of ingredients cooked on coals – including fish, poultry, vegetables and breads. The wine list has been painstakingly put together – it features 100 of the best local and some international wines. Diners can expect a great night out, with delicious food and top-notch service – and one of the best views of the city."]} />
+                         <ImgSection img={section4Img}
+                              link="/"
+                              classes="lg:mt-20 sm:mt-12 mb-9"
+                              high="Marble" title="Gift Cards"
+                              sub="A book about cooking"
+                              paras={["Easily purchase one of our set value gift cards and spoil a friend, a client or a loved one to an ultimate dining experience like no other. An experience that combines the concepts of an open-fire trend seen internationally with an added dose of good South African flair."]} />
                     </div>
                </section>
 
@@ -154,7 +123,7 @@ export default function Home() {
                     <div className="sl-container flex flex-wrap">
                          <header className="w-full text-center uppercase">
                               <h3 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl md:font-light text-neutral-800 lg:leading-[1em] py-12">
-                                   <span className="block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]">Marble</span>
+                                   <span className="block lowercase text-fuchsia-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]">Epicure</span>
                                    Award Winning Cuisine
                               </h3>
                          </header>
@@ -213,7 +182,7 @@ export default function Home() {
                     <div className="sl-container flex flex-wrap">
                          <header className="w-full text-center uppercase">
                               <h3 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl md:font-light text-neutral-800 lg:leading-[1em] pb-4">
-                                   <span className="block lowercase text-yellow-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]">Marble</span>
+                                   <span className="block lowercase text-fuchsia-700 font-courgette lg:text-6xl md:text-4xl text-3xl leading-[48px]">Epicure</span>
                                    Feature 2020
                               </h3>
                          </header>
